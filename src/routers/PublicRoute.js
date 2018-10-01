@@ -4,11 +4,11 @@ import { Route, Redirect } from 'react-router-dom';
 
 
 export const PublicRoute = ( // ...rest = All other props that we didn't destructure specifically
-  { 
+  {
     isAuthenticated,
-     component: Component,
-      ...rest 
-    }) => ( // component renamed to Component  (prop passed in AppRouter.js)
+    component: Component,
+    ...rest
+  }) => ( // component renamed to Component  (prop passed in AppRouter.js)
     <Route {...rest} component={(props) => (
       isAuthenticated ? (
         <Redirect to="/dashboard" />

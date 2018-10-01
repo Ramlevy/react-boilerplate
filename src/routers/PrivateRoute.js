@@ -5,11 +5,11 @@ import Header from '../components/Header';
 
 
 export const PrivateRoute = ( // ...rest = All other props that we didn't destructure specifically
-  { 
+  {
     isAuthenticated,
-     component: Component,
-      ...rest 
-    }) => ( // component renamed to Component  (prop passed in AppRouter.js)
+    component: Component,
+    ...rest
+  }) => ( // component renamed to Component  (prop passed in AppRouter.js)
     <Route {...rest} component={(props) => (
       isAuthenticated ? (
         <div>
