@@ -1,7 +1,7 @@
 import * as firebase from 'firebase'; // grab all exports into firebase -> firebase.Method
 
 
-// Initialize Firebase
+// Initialize Firebase with API data
 const config = {
   apiKey: "AIzaSyC0OGIW06thSKOROAsLlUCe3y73U998npo",
   authDomain: "expensify-523c1.firebaseapp.com",

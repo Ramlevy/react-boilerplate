@@ -16,7 +16,8 @@ export const PrivateRoute = ( // ...rest = All other props that we didn't destru
           <Header />
           <Component {...props} />
         </div>
-      ) : (
+      ) :
+        (
           <Redirect to="/" />
         )
     )}
